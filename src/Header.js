@@ -1,4 +1,11 @@
-import { AppBar, Button, Grid, Toolbar, Typography } from '@material-ui/core';
+import {
+  AppBar,
+  Button,
+  Grid,
+  IconButton,
+  Toolbar,
+  Typography,
+} from '@material-ui/core';
 import React from 'react';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { makeStyles } from '@material-ui/styles';
@@ -51,7 +58,11 @@ const Header = () => {
             FAQ
           </Button>
         </Link>
-        <AccountCircleIcon />
+        <Link className={classes.linkStyle} to='/Profile'>
+          <IconButton>
+            <AccountCircleIcon />
+          </IconButton>
+        </Link>
       </Toolbar>
     </AppBar>
   );
