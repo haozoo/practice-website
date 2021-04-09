@@ -2,6 +2,7 @@ import { AppBar, Button, Grid, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { makeStyles } from '@material-ui/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(() => ({
   logoStyle: {
@@ -16,6 +17,20 @@ const useStyles = makeStyles(() => ({
     border: 10,
     height: 55,
   },
+  buttonStyle: {
+    variant: 'text',
+    color: '#403734',
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    textTransform: 'none',
+    boxShadow: 'none',
+    backgroundColor: 0,
+    borderColor: 0,
+  },
+  linkStyle: {
+    textDecoration: 'none',
+    paddingRight: 10,
+  },
 }));
 
 const Header = () => {
@@ -24,10 +39,18 @@ const Header = () => {
     <AppBar className={classes.appBarStyle} position='static'>
       <Toolbar>
         <Typography className={classes.logoStyle} position='static'>
-          Penor.
+          <Link className={classes.linkStyle} to='/'>
+            <Button className={classes.buttonStyle}>Penor.</Button>
+          </Link>
         </Typography>
-        <Button color='inherit'>Shop</Button>
-        <Button color='inherit'>Sell</Button>
+        <Link className={classes.linkStyle} to='/Shop'>
+          <Button className={classes.buttonStyle}>SHOP</Button>
+        </Link>
+        <Link className={classes.linkStyle} to='/Shop'>
+          <Button className={classes.buttonStyle} color='inherit'>
+            SELL
+          </Button>
+        </Link>
         <AccountCircleIcon />
       </Toolbar>
     </AppBar>
