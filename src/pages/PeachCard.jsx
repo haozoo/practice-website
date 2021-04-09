@@ -12,7 +12,7 @@ import { red } from '@material-ui/core/colors';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '100%',
-    maxHeight: 350,
+    maxHeight: '100%',
   },
   media: {
     height: 0,

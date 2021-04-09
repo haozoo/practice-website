@@ -47,7 +47,7 @@ const Header = () => {
       <Toolbar>
         <Typography className={classes.logoStyle} position='static'>
           <Link className={classes.linkStyle} to='/'>
-            <Button className={classes.buttonStyle}>Penor.</Button>
+            <Button className={classes.buttonStyle}>PP.</Button>
           </Link>
         </Typography>
         <Link className={classes.linkStyle} to='/Shop'>

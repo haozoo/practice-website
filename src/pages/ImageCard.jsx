@@ -53,7 +53,7 @@ export default function MediaCard() {
         />
       </CardActionArea>
       <Typography className={classes.overlay}>
-        Penor <br />
+        Pretty <br />
         Peaches.
       </Typography>
     </Card>
