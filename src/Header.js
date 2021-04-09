@@ -18,9 +18,9 @@ const useStyles = makeStyles(() => ({
     height: 55,
   },
   buttonStyle: {
-    variant: 'text',
+    variant: 'h1',
     color: '#403734',
-    fontSize: 20,
+    fontSize: 18,
     fontFamily: 'Poppins',
     textTransform: 'none',
     boxShadow: 'none',
@@ -46,9 +46,9 @@ const Header = () => {
         <Link className={classes.linkStyle} to='/Shop'>
           <Button className={classes.buttonStyle}>SHOP</Button>
         </Link>
-        <Link className={classes.linkStyle} to='/Shop'>
+        <Link className={classes.linkStyle} to='/FAQ'>
           <Button className={classes.buttonStyle} color='inherit'>
-            SELL
+            FAQ
           </Button>
         </Link>
         <AccountCircleIcon />
