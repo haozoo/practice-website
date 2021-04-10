@@ -16,10 +16,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleCollapse(props) {
+export default function MiniShop({ checked }) {
   const classes = useStyles();
-  const { checked = false } = props;
-
   return (
     <div className={classes.root}>
       <div className={classes.container}>

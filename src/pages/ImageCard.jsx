@@ -50,31 +50,29 @@ const useStyles = makeStyles({
   },
 });
 
-export default class {
-  constructor(props) {
-    const classes = useStyles();
-  }
-  render() {
-    return (
-      <Card className={classes.root}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image='https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'
-            title='Contemplative Reptile'
-          />
-        </CardActionArea>
-        <Typography className={classes.overlay}>
-          <Typography className={classes.head}>
-            Pretty <br />
-            Peaches. <br />
-          </Typography>
-          <Button className={classes.buttonStyle}>
-            Start shopping now!
-            <KeyboardArrowRightIcon size='100px' />
-          </Button>
+export default function ImageCard({ checked, handleChange }) {
+  const classes = useStyles();
+
+  return (
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image='https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'
+          title='Contemplative Reptile'
+        />
+      </CardActionArea>
+      <Typography className={classes.overlay}>
+        <Typography className={classes.head}>
+          Pretty <br />
+          Peaches. <br />
         </Typography>
-      </Card>
-    );
-  }
+
+        <Button className={classes.buttonStyle} onClick={handleChange}>
+          {!checked ? 'Start shopping now!' : 'No more shopping :('}
+          <KeyboardArrowRightIcon size='100px' />
+        </Button>
+      </Typography>
+    </Card>
+  );
 }

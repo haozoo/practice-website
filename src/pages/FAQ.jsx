@@ -66,10 +66,7 @@ export default function ControlledAccordions() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                feugiat. Aliquam eget maximus est, id dignissim quam.
-              </Typography>
+              <Typography>Ask Bing.</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -87,11 +84,7 @@ export default function ControlledAccordions() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Donec placerat, lectus sed mattis semper, neque lectus feugiat
-                lectus, varius pulvinar diam eros in elit. Pellentesque
-                convallis laoreet laoreet.
-              </Typography>
+              <Typography>Not if you're Bing</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -105,15 +98,11 @@ export default function ControlledAccordions() {
             >
               <Typography className={classes.heading}>#3</Typography>
               <Typography className={classes.secondaryHeading}>
-                Am I dumb?
+                Where did the first peach come from?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
-              </Typography>
+              <Typography>Bing</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -127,15 +116,11 @@ export default function ControlledAccordions() {
             >
               <Typography className={classes.heading}>#4</Typography>
               <Typography className={classes.secondaryHeading}>
-                Teehee XD!
+                Is Bing a dummy??
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
-              </Typography>
+              <Typography>Yes, Bing is dumb!</Typography>
             </AccordionDetails>
           </Accordion>
         </Grid>
