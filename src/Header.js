@@ -57,6 +57,11 @@ const Header = () => {
           <Button className={classes.buttonStyle} color='inherit'>
             FAQ
           </Button>
+          <Link className={classes.linkStyle} to='/Map'>
+            <Button className={classes.buttonStyle} color='inherit'>
+              MAP
+            </Button>
+          </Link>
         </Link>
         <Link className={classes.linkStyle} to='/Profile'>
           <IconButton>

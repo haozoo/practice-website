@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import FAQ from './pages/FAQ';
 import Profile from './pages/Profile';
+import Map from './pages/Map';
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Route exact path='/Shop' component={Shop}></Route>
       <Route exact path='/FAQ' component={FAQ}></Route>
       <Route exact path='/Profile' component={Profile}></Route>
+      <Route exact path='/Map' component={Map}></Route>
     </Switch>
   );
 };

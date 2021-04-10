@@ -7,7 +7,6 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import ImageCard from './ImageCard';
-import Image from './peaches.jpg';
 import ImageGridList from './ImageGridList';
 import MiniShop from './MiniShop';
 
@@ -18,12 +17,6 @@ const useStyles = makeStyles({
     color: 'white',
     height: 0,
     padding: 0,
-  },
-  paperContainer: {
-    backgroundImage: `url(${Image})`,
-    height: 1356,
-    width: 2560,
-    paddingRight: '56.25%',
   },
 });
 
