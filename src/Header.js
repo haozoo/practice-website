@@ -1,7 +1,6 @@
 import {
   AppBar,
   Button,
-  Grid,
   IconButton,
   Toolbar,
   Typography,
@@ -23,6 +22,7 @@ const useStyles = makeStyles(() => ({
       'linear-gradient(225deg, rgba(255,96,0,1) 0%, rgba(255,58,102,1) 100%)',
     border: 10,
     height: 55,
+    zIndex: 1,
   },
   buttonStyle: {
     variant: 'h1',

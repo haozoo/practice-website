@@ -21,9 +21,13 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 const useStyles = makeStyles({
   root: {
+    border: 10,
     borderRadius: 0,
   },
   media: {
@@ -34,28 +38,43 @@ const useStyles = makeStyles({
     top: '160px',
     left: '20px',
     color: '#403734',
+  },
+  head: {
     fontSize: 100,
     fontFamily: 'Poppins',
     lineHeight: 1.1,
   },
+  linkStyle: {
+    textDecoration: 'none',
+    paddingRight: 10,
+  },
 });
 
-export default function MediaCard() {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image='https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'
-          title='Contemplative Reptile'
-        />
-      </CardActionArea>
-      <Typography className={classes.overlay}>
-        Pretty <br />
-        Peaches.
-      </Typography>
-    </Card>
-  );
+export default class {
+  constructor(props) {
+    const classes = useStyles();
+  }
+  render() {
+    return (
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image='https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'
+            title='Contemplative Reptile'
+          />
+        </CardActionArea>
+        <Typography className={classes.overlay}>
+          <Typography className={classes.head}>
+            Pretty <br />
+            Peaches. <br />
+          </Typography>
+          <Button className={classes.buttonStyle}>
+            Start shopping now!
+            <KeyboardArrowRightIcon size='100px' />
+          </Button>
+        </Typography>
+      </Card>
+    );
+  }
 }

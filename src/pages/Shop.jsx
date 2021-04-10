@@ -11,27 +11,28 @@ const useStyles = makeStyles({
   },
 });
 
-function Shop() {
+function Shop(props) {
+  const { width = 8, padding = 2 } = props;
   const classes = useStyles();
 
   return (
     <Grid container direction='column'>
       <Grid item container>
-        <Grid xs={false} sm={2} />
-        <Grid xs={12} sm={8}>
+        <Grid xs={false} sm={padding} />
+        <Grid xs={12} sm={width}>
           <Typography className={classes.textStyle}>
             <br />
             Shop from local suppliers
           </Typography>
         </Grid>
-        <Grid xs={false} sm={2} />
+        <Grid xs={false} sm={padding} />
       </Grid>
       <Grid item container>
-        <Grid xs={false} sm={2} />
-        <Grid xs={12} sm={8}>
+        <Grid xs={false} sm={padding} />
+        <Grid xs={12} sm={width}>
           <Items />
         </Grid>
-        <Grid xs={false} sm={2} />
+        <Grid xs={false} sm={padding} />
       </Grid>
     </Grid>
   );
