@@ -1,6 +1,6 @@
 import { Box, Button } from '@material-ui/core';
 import React from 'react';
-import Map1 from './map1.jpg';
+import Map1 from '../../images/map1.jpg';
 import { MapInteractionCSS } from 'react-map-interaction';
 
 function Map() {

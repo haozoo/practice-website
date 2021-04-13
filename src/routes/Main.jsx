@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import FAQ from './pages/FAQ';
-import Profile from './pages/Profile';
-import Map from './pages/Map';
+import Home from '../components/pages/home/Home';
+import Shop from '../components/pages/shop/Shop';
+import FAQ from '../components/pages/FAQ';
+import Profile from '../components/pages/profile/Profile';
+import Map from '../components/pages/Map';
 
 const Main = () => {
   return (

@@ -1,4 +1,4 @@
-import Main from './Main';
+import Main from '../../routes/Main';
 import Header from './Header';
 
 function App() {

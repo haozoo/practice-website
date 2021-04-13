@@ -1,7 +1,7 @@
 import React from 'react';
 import PeachCard from './PeachCard';
 import { Grid } from '@material-ui/core';
-import PeachList from './tileData';
+import PeachList from './PeachData';
 
 // default px integer is multiplier
 function Items() {

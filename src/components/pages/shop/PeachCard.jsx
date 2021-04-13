@@ -7,7 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Avatar, CardMedia, IconButton, makeStyles } from '@material-ui/core';
 import ShareIcon from '@material-ui/icons/Share';
-import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {

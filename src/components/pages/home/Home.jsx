@@ -6,9 +6,9 @@ import {
   Typography,
 } from '@material-ui/core';
 import React from 'react';
-import ImageCard from './ImageCard';
-import ImageGridList from './ImageGridList';
-import MiniShop from './MiniShop';
+import ImageCard from './Landing';
+import ImageGridList from './PeachGallery';
+import MiniShop from '../shop/MiniShop';
 
 const useStyles = makeStyles({
   backgroundStyle: {
